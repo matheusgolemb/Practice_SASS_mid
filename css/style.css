@@ -1,0 +1,387 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Merriweather, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Bree Serif, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #0076A3;
+  font-size: 36px;
+}
+
+h2 {
+  color: #6D73C2;
+}
+
+h3 {
+  color: #548C27;
+  font-size: 22px;
+}
+
+h4 {
+  color: #D14348;
+  font-size: 18px;
+}
+
+body {
+  background-color: #EEE8D6;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+main > section {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media (min-width: 300px) {
+  header {
+    display: none;
+  }
+  #tables {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #jumbotron {
+    padding: 0%;
+    background-image: url("/img/water.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #jumbotron h1 {
+    font-family: Merriweather, Helvetica, sans-serif;
+  }
+  #jumbotron div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #jumbotron p {
+    width: 80%;
+  }
+  #jumbotron h1 {
+    color: #FFBA00;
+    font-size: 60px;
+  }
+  #typography .container {
+    flex-direction: column;
+    row-gap: 3vh;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    display: flex;
+  }
+  #typography blockquote {
+    align-self: center;
+    width: 60%;
+  }
+  #typography .grid {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  #typography img {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 20px;
+  }
+  #buttons h1 {
+    padding-bottom: 10%;
+    width: 100%;
+  }
+  #buttons div {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+  }
+  #buttons button {
+    padding: 5%;
+    color: #EEE8D6;
+    border-radius: 10px;
+  }
+  #buttons .btn-default {
+    background-color: #022933;
+  }
+  #buttons .btn-cool {
+    background-color: #0076A3;
+  }
+  #buttons .btn-hot {
+    background-color: #D14348;
+  }
+  #buttons .btn-awesome {
+    background-color: #6D73C2;
+  }
+  #lists .container {
+    row-gap: 5vh;
+  }
+  #lists article {
+    flex-direction: column;
+    row-gap: 3vh;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    display: flex;
+  }
+  #lists ul, #lists ol {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+  }
+  #media .container {
+    row-gap: 3vh;
+  }
+  #media h2 {
+    color: #0076A3;
+  }
+  #media ol {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  #media a {
+    color: black;
+  }
+  #media li {
+    border-top: 1px dashed #D14348;
+    list-style-type: none;
+    padding-top: 2%;
+  }
+  #media img {
+    margin: 1vh;
+    float: left;
+    width: 20vh;
+    height: 20vh;
+  }
+  footer {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: #022933;
+  }
+  header .branding {
+    display: none;
+  }
+  header .container {
+    align-items: center;
+  }
+  header ul {
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  header li {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+  }
+  header a {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    transition: 0.4s;
+  }
+  header a:hover {
+    color: #FFBA00;
+    background-color: rgba(0, 0, 0, 0.496);
+  }
+  #jumbotron {
+    height: 50vh;
+  }
+  #typography blockquote {
+    width: 80%;
+  }
+  #typography img {
+    width: 20vh;
+    height: 20vh;
+  }
+  #lists h1 {
+    width: 100%;
+  }
+  #lists .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #lists article {
+    width: 45%;
+  }
+  #media img {
+    width: 10vh;
+    height: 10vh;
+  }
+  #tables {
+    display: unset;
+    padding-bottom: 5%;
+  }
+  #tables .container {
+    row-gap: 3vh;
+  }
+  #tables .table {
+    text-align: left;
+    color: dimgray;
+  }
+  #tables .table th {
+    padding-left: 2%;
+  }
+  #tables caption {
+    text-align: left;
+    font-size: 22px;
+  }
+  #tables thead {
+    text-align: left;
+    background-color: #0076A3;
+    color: whitesmoke;
+  }
+  #tables th, #tables td {
+    border-bottom: 1px dashed #0076A3;
+    height: 3vh;
+  }
+  #tables tbody tr:nth-child(even) {
+    background-color: #FFBA00;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #022933;
+    height: 15vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+  }
+  footer ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  footer li {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+  footer a {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    font-size: 16px;
+    transition: 0.4s;
+  }
+  footer a:hover {
+    color: #FFBA00;
+    background-color: rgba(0, 0, 0, 0.496);
+  }
+}
+@media (min-width: 1000px) {
+  main {
+    row-gap: 10vh;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .branding {
+    display: unset;
+    padding-left: 5%;
+  }
+  header ul {
+    width: 50%;
+    flex-direction: row;
+  }
+  header h1 {
+    color: #FFBA00;
+  }
+  #jumbotron {
+    height: 90vh;
+  }
+  #jumbotron div {
+    padding-bottom: 2%;
+  }
+  #typography .container {
+    row-gap: 5vh;
+  }
+  #typography blockquote {
+    width: 90%;
+  }
+  #typography .grid {
+    justify-content: center;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    row-gap: 3vh;
+  }
+  #typography img {
+    width: 50vh;
+    height: 50vh;
+  }
+  #buttons button {
+    padding: 2%;
+  }
+  #media img {
+    width: 20vh;
+    height: 20vh;
+  }
+  #media li {
+    transition: 0.4s;
+  }
+  #media li:hover {
+    background-color: #FFBA00;
+    cursor: pointer;
+  }
+  #lists .container {
+    row-gap: 10vh;
+  }
+  #tables .table {
+    width: 80%;
+  }
+  #tables thead {
+    transition: 0.4s;
+  }
+  #tables thead:hover {
+    background-color: #D14348;
+    cursor: pointer;
+  }
+  #tables th, #tables td {
+    height: 5vh;
+  }
+}/*# sourceMappingURL=style.css.map */

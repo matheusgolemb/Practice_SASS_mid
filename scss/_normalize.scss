@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontMerri;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $fontBree;
+}
+
+h1 {
+    color: $colorBlue;
+    font-size: 36px;
+}
+
+h2 {
+    color: $colorPurple;
+}
+h3 {
+    color: $colorGreen;
+    font-size: 22px;
+}
+h4 {
+    color: $colorRed;
+    font-size: 18px;
+
+}
+
+body {
+    background-color: $colorBeige;
+}
+
+main {
+    @include beFlexColumn;
+    row-gap: 5vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none
+}
+
+main > section {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+

@@ -1,0 +1,102 @@
+@media (min-width: 1000px) {
+
+    main {
+        row-gap: 10vh;
+    }
+
+    header {
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .branding  {
+            display: unset;
+            padding-left: 5%;
+
+        }
+
+        ul {
+            width: 50%;
+            flex-direction: row;
+        }
+
+        h1 {
+            color: $colorYellow;
+        }
+    }
+
+    #jumbotron {
+        height: 90vh;
+
+        div {
+
+            padding-bottom: 2%;
+        }
+    }
+
+    #typography {
+        .container {
+            row-gap: 5vh;
+        }
+        blockquote {
+            width: 90%;
+        }
+        .grid {
+            justify-content: center;
+            column-gap: 3vh;
+            row-gap: 3vh;
+        }
+        img {
+            width: 50vh;
+            height: 50vh;
+        }
+
+    }
+
+    #buttons {
+        button {
+            padding: 2%;
+        }
+    }
+
+    #media {
+
+        img {
+            width: 20vh;
+            height: 20vh;
+        }
+        li {
+            transition: .4s;
+        }
+
+        li:hover {
+            background-color: $colorYellow;
+            cursor: pointer;
+        }
+
+    }
+    #lists {
+        .container {
+            row-gap: 10vh;
+        }
+    }
+    #tables {
+        .table {
+            width: 80%;
+        }
+
+        thead {
+            transition: .4s;
+            &:hover {
+                background-color: $colorRed;
+                cursor: pointer;
+            }
+        }
+
+
+        th, td {
+            height: 5vh;
+        }
+    }
+}

@@ -1,0 +1,153 @@
+@media (min-width: 300px) {
+    header {
+        display: none;
+    }
+
+    #tables {
+        display: none;
+    }
+
+    .container {
+        @include beFlexColumn;
+    }
+
+    #jumbotron {
+        padding: 0%;
+        @include backPicture('/img/water.jpg');
+        color: whitesmoke;
+        height: 70vh;
+        @include beFlexColumn;
+
+        h1 {
+            font-family: $fontMerri
+        }
+        
+        div {
+            @include beFlexColumn;
+            justify-content: flex-end;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 10%;
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color: black, $alpha: 0.3);
+            // border: 1px solid red;
+        }
+
+        p {
+            width: 80%;
+        }
+    
+        h1 {
+            color: $colorYellow;
+            font-size: 60px;
+        }
+    }
+
+    #typography {
+        .container {
+            @include beFlex(column, 3vh);
+        }
+
+        blockquote {
+            align-self: center;
+            width: 60%;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            // border: 1px solid red;
+            row-gap: 1vh;
+            column-gap: 1vh;
+        }
+        img {
+            width: 15vh;
+            height: 15vh;
+            border-radius: 20px;
+        }
+    }
+
+    #buttons {
+        h1 {
+            padding-bottom: 10%;
+            // USED PADDING BC ROW GAP WILL GIVE GAP BETWEEN BUTTONS
+            width: 100%;
+        }
+        div {
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 50%;
+        }
+        button {
+            padding: 5%;
+            color: $colorBeige;
+            border-radius: 10px;
+        }
+
+        .btn-default {
+            background-color: $colorDarkBlue;
+        }
+        .btn-cool {
+            background-color: $colorBlue;
+        }
+        .btn-hot {
+            background-color: $colorRed;
+        }
+        .btn-awesome {
+            background-color: $colorPurple;
+        }
+    }
+
+    #lists {
+        .container {
+            row-gap: 5vh;
+        }
+
+        article {
+            @include beFlex(column, 3vh);
+        }
+
+        ul, ol {
+            @include beFlexColumn;
+            padding-left: 10%;
+        }
+    }
+
+    #media {
+        .container {
+            row-gap: 3vh;
+        }
+
+        h2 {
+            color: $colorBlue;
+        }
+
+        ol {
+            @include beFlexColumn;
+            row-gap: 2vh;
+        }
+
+        a {
+            color: black;
+        }
+
+        li {
+            border-top: 1px dashed $colorRed;
+            list-style-type: none;
+            padding-top: 2%;
+        }
+
+        img {
+            margin: 1vh;
+            float: left;
+            width: 20vh;
+            height: 20vh;
+        }
+    }
+
+
+    footer {
+        display: none;
+    }
+}

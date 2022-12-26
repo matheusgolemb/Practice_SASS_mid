@@ -1,0 +1,22 @@
+@mixin backPicture ($url) {
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin beFlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin beFlex (
+    $direction, 
+    $rowGap, 
+    $columnGap: 0vh
+){
+    flex-direction: $direction;
+    row-gap: $rowGap;
+    column-gap: $columnGap;
+    display: flex;
+}

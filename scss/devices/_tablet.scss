@@ -1,0 +1,153 @@
+@media (min-width: 700px) {
+    header {
+        @include beFlexColumn;
+        background-color: $colorDarkBlue;
+
+        .branding {
+            display: none;
+        }
+
+        .container {
+            align-items: center;
+        }
+
+        ul {
+            width: 80%;
+            // border: 1px solid red;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+
+        }
+
+        li {
+            display: flex;
+            width: 100%;
+            text-align: center;
+            list-style-type: none;
+        }
+        a {
+            padding: 5%;
+            width: 100%;
+            height: 100%;
+            color: whitesmoke;
+            transition: .4s;
+
+            &:hover {
+                color: $colorYellow;
+                background-color: rgba(0, 0, 0, 0.496);
+            }
+        }
+
+    }
+
+    #jumbotron {
+        height: 50vh;
+    }
+
+    #typography {
+        blockquote {
+            width: 80%;
+        }
+
+        img {
+            width: 20vh;
+            height: 20vh;
+        }
+    }
+
+    #lists {
+        h1 {
+            width: 100%;
+        }
+        .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        article {
+            width: 45%;
+        }
+    }
+
+    #media {
+        img {
+            width: 10vh;
+            height: 10vh;
+        }
+    }
+
+    #tables {
+        // unset bc is none in mobile
+        display: unset;
+        padding-bottom: 5%;
+        .container {
+            row-gap: 3vh;
+        }
+        .table {
+            text-align: left;
+            color: dimgray;
+
+            th {
+                padding-left: 2%;
+            }
+        }
+        caption {
+            text-align: left;
+            font-size: 22px;
+        }
+        thead {
+            text-align: left;
+            background-color: $colorBlue;
+            color: whitesmoke;
+        }
+
+        th, td {
+            border-bottom: 1px dashed $colorBlue;
+            height: 3vh;
+            // styling to rows
+        }
+
+        tbody {
+            tr:nth-child(even){
+                background-color: $colorYellow;
+            }
+        }
+    }
+
+    footer {
+        @include beFlexColumn;
+        background-color: $colorDarkBlue;
+        height: 15vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+
+        ul {
+           display: flex;
+           width: 100%;
+           justify-content: space-between;
+        }
+
+        li {
+           display: flex;
+           width: 100%;
+           text-align: center;
+        }
+        
+        a {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            color: whitesmoke;
+            font-size: 16px;
+            transition: .4s;
+
+            &:hover {
+                color: $colorYellow;
+                background-color: rgba(0, 0, 0, 0.496);
+            }
+        }
+    }
+}
